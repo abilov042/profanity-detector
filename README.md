@@ -24,6 +24,11 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama pull llama3
 ```
 
+## Start the Ollama service
+### run this command:
+```sh
+sudo systemctl start ollama
+```
 ## Setting Up the Custom Model
 
 ### Create a file named Modelfile and add the following content
