@@ -18,20 +18,20 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ## Pull Llama 3 Model
 
-### Once Ollama is installed, pull the Llama 3 model using:
+Once Ollama is installed, pull the Llama 3 model using:
 
 ```sh
 ollama pull llama3
 ```
 
 ## Start the Ollama service
-### run this command:
+run this command:
 ```sh
 sudo systemctl start ollama
 ```
 ## Setting Up the Custom Model
 
-### Create a file named Modelfile and add the following content
+Create a file named Modelfile and add the following content
 
 
 ```markdown
@@ -47,7 +47,7 @@ SYSTEM I will send you a sentence, if there is swearing in this sentence, you wi
 
 ## Create the Custom Model
 
-### Run the following command to create your custom profanity-detector model:
+Run the following command to create your custom profanity-detector model:
 
 ```sh
 ollama create profanity-detector -f ./Modelfile
@@ -55,7 +55,7 @@ ollama create profanity-detector -f ./Modelfile
 
 ## Using the Model in Your Spring Boot Application
 
-### To use the custom Llama 3 model in your Spring Boot application, add the following dependencies to your build.gradle file:
+To use the custom Llama 3 model in your Spring Boot application, add the following dependencies to your build.gradle file:
 ```groovy
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
